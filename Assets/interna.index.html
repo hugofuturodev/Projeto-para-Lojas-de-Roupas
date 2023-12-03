@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interna </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        font-family: "Francois One", sans-serif;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    ul,
+    ol,
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #F8F8F8;
+    }
+
+    img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #menu-header {
+        background: #FFF;
+    }
+
+    #menu-header .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+    }
+
+    #menu-header ul {
+        display: flex;
+        list-style: none;
+    }
+
+    #menu-header ul li {
+        padding: 0 10px;
+    }
+
+    #menu-header ul li a {
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    #imagens {
+        max-width: 60px 0;
+        text-align: center;
+    }
+
+    #imagens .container {
+        max-width: 900px;
+    }
+
+    #imagens #imagens-grande {
+        width: 100%;
+        text-align: center;
+    }
+
+    #imagens #imagens-pequenas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+    }
+
+    #imagens #imagens-pequenas img {
+        max-width: 25%;
+    }
+
+    #informacoes .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 44px;
+        color: #22A4C0;
+        min-width: 350px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .botao {
+        display: block;
+        text-align: center;
+        background: #22A4C0;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 20px 10px;
+        letter-spacing: 4px;
+    }
+
+    h3 {
+        color: #999999;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 30px;
+    }
+
+    #localizacao {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    #localizacao iframe {
+        margin: 20px 0 30px 0;
+        margin-top: 20px;
+    }
+
+    #botoes .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #botoes a {
+        font-size: 14px;
+        font-weight: bold;
+        background: #22A4C0;
+        color: #FFF;
+        width: 100%;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #botoes a:hover {
+        text-decoration: underline;
+    }
+
+    footer #topo-footer {
+        background: #000;
+        color: #FFF;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    footer #topo-footer #menu-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer #topo-footer #menu-footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    footer #topo-footer #menu-footer ul li {
+        padding: 0 10px;
+    }
+
+    footer #topo-footer #menu-footer ul li a {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    footer #topo-footer #menu-footer ul li a:hover {
+        text-decoration: underline;
+    }
+
+
+    @media screen and (max-width: 998px) {
+        header {
+            text-align: center;
+        }
+
+        header .container {
+            justify-content: center;
+
+        }
+
+        #menu-logo {
+            margin: auto;
+        }
+
+
+        #menu-header ul {
+            display: none;
+        }
+
+        #imagens {
+            padding: 10px;
+        }
+
+        #imagens #imagens-pequenas {
+            flex-direction: column;
+        }
+
+        #imagens #imagens-pequenas img {
+            max-width: 100%;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+
+
+        #informacoes {
+            text-align: center;
+            padding: 10px;
+        }
+
+        #informacoes .container {
+            flex-direction: column;
+        }
+
+        #localizacao {
+            padding: 20px;
+        }
+
+        #botoes .container {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+footer #topo-footer #menu-footer {
+flex-direction: column;
+}
+
+footer #topo-footer #menu-footer ul {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <div id="menu-header">
+            <div class="container">
+                <div id="menu-logo">
+                    <img src="./Img/logo.png" alt="Logo Superstore" />
+                </div>
+                <ul>
+                    <li>
+                        <a class="meu-botao">HOME</a>
+                    </li>
+                    <li>
+                        <a class="meu-botao">LOJA</a>
+                    </li>
+                    <li>
+                        <aa class="meu-botao">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div id="inverter-responsivo">
+        <section id="imagens">
+            <div class="container">
+                <img src="./Img/prod-interno.jpg" alt="imagem-grande" />
+
+                <div id="imagens-pequenas">
+                    <img src="./Img/prod.png" alt="Imagem interna pequenas" />
+                    <img src="./Img/prod.png" alt="Imagem interna pequenas" />
+                    <img src="./Img/prod.png" alt="Imagem interna pequenas" />
+                </div>
+            </div>
+        </section>
+
+        <section id="informacoes">
+            <div class="container">
+                <div>
+                    <h1>VESTIDO DE RENDA</h1>
+                    <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac fringilla lorem. Aliquam nec
+                        neque eros. Maecenas varius dolor vel diam venenatis molestie. Aliquam lacinia iaculis mi in
+                        pharetra. Vivamus in pretium lectus. Sed at consectetur nibh. Etiam imperdiet orci quis nibh
+                        rhoncus malesuada. Mauris suscipit tristique felis, non tristique lacus. Proin sit amet mi
+                        viverra, laoreet lectus nec, consequat sem.</p>
+                </div>
+                <div>
+                    <h2>R$72.000</h2>
+
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone={{5574981266131}}&text=Olá, eu estava no seu site olhando o Produto X"
+                        class="botao">FALE COM A LOJA</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <section id="localizacao">
+        <div class="container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.482771308631!2d-40.19224782582975!3d-10.462556089667702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76d58fe241dc28d%3A0x92569b02820f8289!2sMulher%20Bonita%20Moda%20Feminina!5e0!3m2!1spt-BR!2sbr!4v1701478623199!5m2!1spt-BR!2sbr"
+                width="600" height="350" style="border:0;width:100%" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="botoes">
+            <div class="container">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5574981266131">MANDAR MENSAGEM PARA
+                    WHATSAPP</a>
+                <a target="_blank" href="tel=557398126131">LIGAR PARA A LOJA</a>
+                <a target="_blank" href="https://instagram.com/hugo_oficial_19">INSTAGRAM DA LOJA</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="topo-footer">
+            <div id="menu-footer" class="container">
+                <div>
+                    <img src="./Img/logo-footer.png" alt="Logo da parte final de baixo" />
+
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a target="_blank" class="#">HOME</a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="#">LOJA</a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="#">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+
+
+
+</body>
+
+</html>

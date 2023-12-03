@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto para Lojas de Roupas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./Assets/css/style.css" />
+</head>
+<style>
+  * {
+    font-family: 'Francois One', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  body,
+  html,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #F8F8F8;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #menu-header {
+    background: #FFF;
+  }
+
+  #menu-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+  }
+
+  #menu-header ul {
+    list-style: none;
+    display: flex;
+  }
+
+  #menu-header ul li {
+    padding: 0 10px;
+  }
+
+  #menu-header ul li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  #menu-header ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #produtos {
+    margin-top: -100px;
+    padding-bottom: 60px;
+  }
+
+
+
+  #produtos .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .produto {
+    background: #FFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    max-width: 30%;
+    min-width: 30%;
+
+  }
+
+  .produto h3 {
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .produto p {
+    color: #999999;
+  }
+
+  .produto h4 {
+    font-size: 30px;
+    color: #22A4C0;
+    text-align: center;
+    margin-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  .produto p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #sobre {
+    background: url(./Img/sobre.png)no-repeat center center;
+    background-size: cover;
+    padding: 90px 0;
+    text-align: center;
+    color: #FFF;
+  }
+
+  #sobre .container {
+    max-width: 550px;
+  }
+
+  #sobre h2 {
+    font-size: 35px;
+    font-weight: 800;
+
+  }
+
+  #sobre p {
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 10px;
+  }
+
+  #localização {
+    margin: 60px 0;
+  }
+
+  #localização h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #localização iframe {
+    margin: 20px 0 30px 0;
+    margin-top: 10px;
+  }
+
+  #botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  #botoes a {
+    background: #22A4C0;
+    color: #FFF;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+  }
+
+  #botoes a:hover {
+    text-decoration: underline;
+  }
+
+  footer #topo-footer {
+    background: #000;
+    padding: 30px 0;
+    margin-top: 20px;
+  }
+
+  footer #topo-footer #menu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer #topo-footer #menu-footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer #topo-footer #menu-footer ul li {
+    padding: 0 10px;
+  }
+
+  footer #topo-footer #menu-footer ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  footer #topo-footer #menu-footer ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #ultimo-texto {
+    padding: 20px;
+    text-align: center;
+  }
+
+@media screen and (max-width: 998px ) {  
+  header{
+    text-align: center;
+    }
+
+header .container{
+  justify-content: center;
+}
+
+#menu-logo{
+  margin: auto;
+}
+
+#menu-header ul {
+  display: none;
+}
+.produto{
+  max-width: 100%;
+}
+#sobre{
+padding: 10px;
+display: flex;
+}
+
+#localização{
+  padding: 10px;
+}
+
+#botoes{
+  flex-direction: column;
+}
+
+footer #topo-footer #menu-footer{
+  flex-direction: column;
+}
+
+footer #topo-footer #menu-footer ul{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+</style>
+
+<body>
+  <header>
+    <div id="menu-header">
+      <div class="container">
+        <div id="menu-logo">
+          <img src="./Img/logo.png" alt="Logo Superstore" />
+        </div>
+        <ul>
+          <li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="#sobre">LOJA</a>
+          </li>
+          <li>
+            <a href="#botoes">CONTATO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <img src="./Img/banner.png" alt="Banner tamanho Grande" />
+  </header>
+  <section id="produtos">
+    <div class="container">
+      <a class="produto" href="#">
+        <img src="./Img/prod.png" alt="Imagem do Produto" />
+        <h3>VESTIDO DE RENDA</h3>
+        <p>LOREM IPSUM DOLOR SITE AMET</p>
+        <h4>R$ 72.000</h4>
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+
+        <a class="produto" href="#">
+          <img src="./Img/prod.png" alt="Imagem do Produto" />
+          <h3>VESTIDO DE RENDA</h3>
+          <p>LOREM IPSUM DOLOR SITE AMET</p>
+          <h4>R$ 72.000</h4>
+        </a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>A LOJA</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac fringilla lorem. Aliquam nec neque eros.
+        Maecenas varius dolor vel diam venenatis molestie. Aliquam lacinia iaculis mi in pharetra. Vivamus in pretium
+        lectus. Sed at consectetur nibh. Etiam imperdiet orci quis nibh rhoncus malesuada. Mauris suscipit tristique
+        felis, non tristique lacus. Proin sit amet mi viverra, laoreet lectus nec, consequat sem.</p>
+    </div>
+  </section>
+
+  <section id="localização">
+    <div class="container">
+      <h3>LOCALIZAÇÃO</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62775.72433884762!2d-40.261770678320325!3d-10.462556099999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76d58fe241dc28d%3A0x92569b02820f8289!2sMulher%20Bonita%20Moda%20Feminina!5e0!3m2!1spt-BR!2sbr!4v1701389839617!5m2!1spt-BR!2sbr"
+        width="600" height="350" style="border:0;width:100%" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="botoes">
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5574981266131">ENVIAR MENSAGEM</a>
+      <a target="_blank" href="tel=557398126131">LIGAR PRA MIM</a>
+      <a target="_blank" href="https://instagram.com/hugo_oficial_19">INSTAGRAM</a>
+    </div>
+  </section>
+
+  <footer>
+    <section id="topo-footer">
+      <div id="menu-footer" class="container">
+        <div>
+          <img src="./Img/logo-footer.png" alt="Logo Superstore" />
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="/">HOME</a>
+            </li>
+            <li>
+              <a href="#sobre">LOJA</a>
+            </li>
+            <li>
+              <a href="#botoes">CONTATO</a>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <div id="ultimo-texto">
+      TODOS OS DIREITOS RESERVADOS
+    </div>
+  </footer>
+</body>
+
+</html>
